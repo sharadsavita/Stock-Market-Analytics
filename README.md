@@ -1,36 +1,28 @@
 # 📈 Stock Market Analytics Dashboard
 
-<p align="center">
+> **End-to-End Stock Market Analytics Project using Python, PostgreSQL, SQL & Power BI**
 
-End-to-End Data Analytics Project using **Python, PostgreSQL, SQL & Power BI**
-
-</p>
+An end-to-end Data Analytics project that collects real-world stock market data, cleans and transforms it using Python, stores it in PostgreSQL, performs SQL analysis, and visualizes business insights with interactive Power BI dashboards.
 
 ---
 
-# 📌 Project Overview
+# 📷 Dashboard Preview
 
-This project demonstrates a complete end-to-end Data Analytics workflow by collecting real-world stock market data, cleaning and transforming it using Python, storing it in PostgreSQL, analyzing it with SQL, and visualizing insights through an interactive Power BI dashboard.
+## 📊 Stock Market Analysis Dashboard
 
-The dashboard analyzes historical stock prices of leading technology companies and provides valuable insights into market performance, trading volume, daily returns, and moving averages.
-
----
-
-# 🎯 Objectives
-
-- Analyze stock market performance
-- Compare multiple companies
-- Track yearly and monthly trends
-- Calculate Daily Return
-- Analyze Moving Averages (MA20 & MA50)
-- Build interactive business dashboards
-- Generate meaningful insights for decision making
+![Dashboard 1](dashboard1.png)
 
 ---
 
-# 🔄 Project Workflow
+## 📈 Technical Analysis Dashboard
 
-```
+![Dashboard 2](dashboard2.png)
+
+---
+
+# 🚀 Project Workflow
+
+```text
 Yahoo Finance API
         │
         ▼
@@ -57,66 +49,91 @@ Business Insights
 
 ---
 
-# 🛠️ Tech Stack
+# 📌 Project Overview
 
-| Technology | Purpose |
-|------------|---------|
-| Python | Data Collection & Cleaning |
-| Pandas | Data Processing |
-| yFinance API | Stock Market Data |
+This project demonstrates the complete Data Analytics lifecycle, from collecting raw stock market data to building professional Power BI dashboards.
+
+Historical stock data of six leading technology companies is analyzed to discover trends, compare performance, evaluate daily returns, and generate meaningful business insights.
+
+---
+
+# 🎯 Objectives
+
+- Analyze stock market performance
+- Compare multiple companies
+- Analyze yearly & monthly trends
+- Calculate Daily Return
+- Generate Moving Averages (MA20 & MA50)
+- Build interactive Power BI dashboards
+- Generate business insights
+
+---
+
+# 🛠 Tech Stack
+
+| Tool | Purpose |
+|------|----------|
+| Python | Data Collection |
+| Pandas | Data Cleaning |
+| yFinance API | Stock Data |
 | PostgreSQL | Database |
 | SQL | Data Analysis |
-| Power BI | Dashboard & Visualization |
-| GitHub | Project Portfolio |
+| Power BI | Dashboard |
+| Git & GitHub | Version Control |
 
 ---
 
-# 📂 Repository Contents
+# 📂 Repository Structure
 
-- 📄 download_stock_data.py
-- 📄 data_cleaning.py
-- 📄 stock_market_analysis.sql
-- 📄 stock_data.csv
-- 📄 stock_data_cleaned.csv
-- 📄 stock market analysis.pbix
-- 🖼 dashboard1.png
-- 🖼 dashboard2.png
+```text
+Stock-Market-Analytics
+│
+├── data_cleaning.py
+├── download_stock_data.py
+├── stock_market_analysis.sql
+├── stock_data.csv
+├── stock_data_cleaned.csv
+├── Stock_Market_Analytics.pbix
+├── dashboard1.png
+├── dashboard2.png
+└── README.md
+```
 
 ---
 
-# 📊 Dashboard 1 - Stock Market Analysis
+# 📊 Dashboard 1
 
 ### KPI Cards
 
-- Total Companies
-- Total Records
-- Highest Close Price
-- Average Close Price
-- Total Trading Volume
+- ✅ Total Companies
+- ✅ Total Records
+- ✅ Highest Close Price
+- ✅ Average Close Price
+- ✅ Total Trading Volume
 
 ### Visualizations
 
 - Average Close Price by Company
 - Year-wise Average Close Price
-- Trading Volume Distribution
 - Monthly Average Close Price
+- Trading Volume Distribution
 - Daily Return Trend
 - Date Slicer
 
 ---
 
-# 📈 Dashboard 2 - Technical Analysis
+# 📈 Dashboard 2
 
 ### KPI Cards
 
-- Maximum High Price
-- Maximum Low Price
-- Average Daily Return
-- Average Trading Volume
+- ✅ Highest High Price
+- ✅ Lowest Low Price
+- ✅ Average Daily Return
+- ✅ Average Trading Volume
 
 ### Visualizations
 
-- Open vs Close Trend
+- Open vs Close Price Trend
 - MA20 vs MA50 Trend
 - Trading Volume Treemap
 - Risk vs Return
@@ -126,27 +143,13 @@ Business Insights
 
 ---
 
-# 📷 Dashboard Preview
+# 📊 Dataset Information
 
-## 📊 Stock Market Analysis Dashboard
-
-![Dashboard 1](dashboard1.png)
-
----
-
-## 📈 Technical Analysis Dashboard
-
-![Dashboard 2](dashboard2.png)
-
----
-
-# 📉 Dataset Information
-
-**Source**
+### Source
 
 Yahoo Finance API
 
-**Companies**
+### Companies
 
 - Apple
 - Microsoft
@@ -155,7 +158,7 @@ Yahoo Finance API
 - Tesla
 - NVIDIA
 
-**Time Period**
+### Time Period
 
 2020 – 2025
 
@@ -163,7 +166,7 @@ Yahoo Finance API
 
 # 🧹 Data Cleaning & Feature Engineering
 
-Using Python, the following features were created:
+The following features were created using Python:
 
 - Daily Return
 - Price Change
@@ -173,59 +176,74 @@ Using Python, the following features were created:
 - Moving Average (20 Days)
 - Moving Average (50 Days)
 
-Missing values were handled and the dataset was transformed into an analysis-ready format.
+Missing values were handled before loading the data into PostgreSQL.
 
 ---
 
-# 🗄️ PostgreSQL Database
+# 🗄 PostgreSQL Database
 
-**Database Name**
+### Database
 
-```
+```text
 stock_market_db
 ```
 
-**Table Name**
+### Table
 
-```
+```text
 stock_data
 ```
 
-The cleaned dataset was imported into PostgreSQL for SQL-based analysis.
+### Columns
+
+- Date
+- Company
+- Open
+- High
+- Low
+- Close
+- Volume
+- Year
+- Month
+- Day
+- Price Change
+- Daily Return
+- MA20
+- MA50
 
 ---
 
 # 🔍 SQL Analysis
 
-Some analysis performed using SQL:
+SQL queries were written to analyze:
 
 - Total Records
 - Total Companies
 - Company-wise Records
 - Highest Closing Price
 - Average Closing Price
-- Trading Volume Analysis
-- Daily Return Analysis
+- Trading Volume
+- Daily Return
+- Moving Average
 
 ---
 
 # 📈 Key Insights
 
-- Microsoft recorded the highest average closing price.
-- NVIDIA contributed the largest trading volume.
-- Moving averages reveal long-term market trends.
-- Daily Return helps identify stock volatility.
-- Company-wise comparison enables better investment insights.
+- 📌 Microsoft recorded the highest average closing price.
+- 📌 NVIDIA contributed the highest trading volume.
+- 📌 Moving averages reveal long-term trends.
+- 📌 Daily Return helps identify stock volatility.
+- 📌 Company-wise comparison improves investment analysis.
 
 ---
 
-# 🚀 Future Improvements
+# 🚀 Future Enhancements
 
 - Live Stock Market Data
-- Power BI Service Deployment
 - Real-Time Dashboard
-- Stock Price Prediction
 - Machine Learning Forecasting
+- Power BI Service Deployment
 - Interactive Web Dashboard
 
 ---
@@ -236,7 +254,7 @@ Some analysis performed using SQL:
 
 **MCA Student | Data Analyst | Power BI Developer | SQL & Python Enthusiast**
 
-### Connect with Me
+### 🔗 Connect with Me
 
 **GitHub**
 
@@ -248,4 +266,4 @@ https://www.linkedin.com/in/sharad-savita-a08955368
 
 ---
 
-⭐ If you like this project, don't forget to give it a Star!
+⭐ **If you like this project, don't forget to give it a Star!**
